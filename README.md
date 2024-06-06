@@ -1,5 +1,5 @@
 # crossbridge-iac-example
-This repository contains an assignement around this repository: ![https://github.com/mkosir/typeorm-express-typescript](https://github.com/mkosir/typeorm-express-typescript).
+This repository contains an assignement around this repository: [https://github.com/mkosir/typeorm-express-typescript](https://github.com/mkosir/typeorm-express-typescript).
 
 ## Objectives
 1. Infrastructure Setup: Use either Terraform or AWS CloudFormation to create and manage the necessary AWS cloud infrastructure. This should include, but not be limited to:
