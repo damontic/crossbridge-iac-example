@@ -38,10 +38,27 @@ This repository contains an assignement around this repository: [https://github.
 1. [Github private repository](https://github.com/damontic/crossbridge-iac-example).
 The repository contains the following key directories:
 - iac: where the AWS resources are created.
+- iac/check_scripts: bash scripts used to confirm the correct state of the resources created in AWS.
 - cicd: where the CICD pipelines are defined.
-- sre: where the monitoring systems are defined.
 - docs: where all documentation is found.
+
+### Deliverables
+- some documentation
+- infrastructure as code in Terraform
+- a single bash script to build the docker image and publish to ECR
+
+### Missing Deliverables
+- architecture diagram
+- monitoring
+- security
+- testing in CI
+- CD pipeline
+- more documentation
 
 ### AWS account unavailability
 Given that I do not have access to an AWS account and none was provided, I decided to tackle the problem using [localstack](https://www.localstack.cloud/) which is [compatible with multiple AWS services](https://docs.localstack.cloud/user-guide/aws/feature-coverage/).
 This means that there mostly will be some steps that won't work while following the [how to deploy](docs/how_to_deploy.md) in AWS. But most of the steps will be very similar.
+
+### AWS Terraform provider issues with latest versions while creating ELBs
+This [bug](https://github.com/hashicorp/terraform-provider-aws/issues/37138) made me work with version 5.45.0 of the AWS provider.
+

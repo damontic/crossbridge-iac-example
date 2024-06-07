@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 5.52.0"
+      version = "~> 5.45.0"
     }
   }
 }
@@ -17,11 +17,13 @@ provider "aws" {
   allowed_account_ids = [ "000000000000" ]
 
   endpoints {
+    autoscaling    = "http://localhost:4566"
     cloudfront     = "http://localhost:4566"
     cloudwatch     = "http://localhost:4566"
     ec2            = "http://localhost:4566"
     ecr            = "http://localhost:4566"
     ecs            = "http://localhost:4566"
+    elbv2          = "http://localhost:4566"
     iam            = "http://localhost:4566"
     kms            = "http://localhost:4566"
     lambda         = "http://localhost:4566"
